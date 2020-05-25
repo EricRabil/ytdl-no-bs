@@ -1,3 +1,4 @@
+import contentDisposition from "content-disposition";
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";
 import morgan from "koa-morgan";
@@ -42,7 +43,7 @@ router.post("/download", async ctx => {
   const { ext, title } = await new Promise(resolve => video.on('info', (info: any) => resolve({ ext: info.ext, title: info.title })));
 
   ctx.set('Content-Type', mime.lookup(ext) as string);
-  ctx.set('Content-Disposition', `attachment; filename="${title}.${ext}"`)
+  ctx.set('Content-Disposition', contentDisposition(`${title}.${ext}`))
 
   ctx.body = video;
 });
