@@ -1,0 +1,23 @@
+head
+  title Social Media Downloader
+  link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk", crossorigin="anonymous")
+  style(type="text/css").
+    .ytdl-inner {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+body
+  nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+    a.navbar-brand(href="#") YoutubeDL
+  main(role="main").container
+    div.ytdl-inner
+      h1 Download shit, easy.
+      form(method="post", action="/download")
+        div.input-group.flex-nowrap
+          div.input-group-prepend
+            span(id="wtf-dl").input-group-text WTF I download??
+          input(type="text", name="download-url", placeholder="https://downlo.ad/this?shit=4091234", aria-label="Download Link" aria-describedby="wtf-dl").form-control
+          div.input-group-append
+            button(type="submit").btn.btn-primary Download Shit
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj", crossorigin="anonymous")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js", integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI", crossorigin="anonymous")

@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  ytdl_no_bs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: host
+    ports:
+      - 6208:6208

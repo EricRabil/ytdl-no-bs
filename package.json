@@ -1,0 +1,41 @@
+{
+  "name": "ytdl-no-bs",
+  "version": "1.0.0",
+  "description": "Pass the URL of the post you want to download, have it piped straight to your browser.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "start": "node dist/index.js"
+  },
+  "repository": "https://github.com/EricRabil/ytdl-no-bs.git",
+  "author": "Eric Rabil <ericjrabil@gmail.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "koa": "^2.12.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-morgan": "^1.0.1",
+    "koa-pug": "^4.0.3",
+    "koa-router": "^8.0.8",
+    "koa.js": "^1.0.0",
+    "mime-types": "^2.1.27",
+    "morgan": "^1.10.0",
+    "pug": "^2.0.4",
+    "remove": "^0.1.5",
+    "yarn": "^1.22.4",
+    "youtube-dl": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-morgan": "^1.0.4",
+    "@types/koa-pug": "^4.0.0",
+    "@types/koa-router": "^7.4.1",
+    "@types/mime-types": "^2.1.0",
+    "@types/morgan": "^1.9.0",
+    "@types/node": "^14.0.5",
+    "@types/pug": "^2.0.4",
+    "@types/youtube-dl": "^1.12.2",
+    "typescript": "^3.9.3"
+  }
+}
